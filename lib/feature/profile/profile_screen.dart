@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
+  final GlobalKey<ScaffoldState>? parentScaffoldKey;
+
+  const ProfileScreen({super.key, this.parentScaffoldKey});
 
   @override
   Widget build(BuildContext context) {
