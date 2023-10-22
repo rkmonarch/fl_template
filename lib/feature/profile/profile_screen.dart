@@ -11,6 +11,14 @@ class ProfileScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Profile Screen'),
       ),
+      body: const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Profile Screen'),
+          ],
+        ),
+      ),
     );
   }
 }

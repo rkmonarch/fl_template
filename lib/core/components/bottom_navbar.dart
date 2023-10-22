@@ -1,7 +1,6 @@
 import 'package:fl_template/feature/home/home_screen.dart';
 import 'package:fl_template/feature/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 // ignore: must_be_immutable
@@ -114,16 +113,16 @@ class _PagesWidgetState extends State<PagesWidget> {
         onTap: (int i) {
           _selectTab(i);
         },
-        items: [
+        items: const [
           BottomNavigationBarItem(
-            icon: const Icon(Icons.home),
-            activeIcon: const Icon(Icons.home),
-            label: 'text00040'.tr,
+            icon: Icon(Icons.home),
+            activeIcon: Icon(Icons.home),
+            label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: const Icon(Icons.person),
-            activeIcon: const Icon(Icons.person),
-            label: 'text00041'.tr,
+            icon: Icon(Icons.person),
+            activeIcon: Icon(Icons.person),
+            label: "Profile",
           ),
         ],
       ),
